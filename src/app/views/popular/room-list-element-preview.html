@@ -1,0 +1,39 @@
+<div class="panel panel-default talkabit-panel-room">
+  <div class="panel-heading">
+    <h4>Room Name</h4>
+  </div>
+  <div class="panel-body">
+    <div class="talkabit-img-container">
+      <div class="talkabit-img-popular thumbnail">
+        <div class="row">
+          <div class="col-xs-6">
+            <img src="http://www.lorempixum.com/400/400?id={{item}}" alt="" class="img-responsive img-thumbnail" />
+          </div>
+          <div class="col-xs-6">
+            <img src="http://www.lorempixum.com/400/400?id={{item*5}}" alt="" class="img-responsive img-thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      </p>
+    </div>
+    <div class="comments">
+      <div><strong>Comments:</strong></div>
+      <ul class="media-list" >
+        <li class="media" ng-repeat="comment in [1,2]">
+          <div  ng-include src="'app/views/popular/room-list-comment.html'"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <span class="label label-default">OPEN</span>
+    <span class="label label-default">CLOSE</span>
+    <button class="btn btn-default">Talk back</button>
+    <button class="btn btn-default">Comment</button>
+  </div>
+</div>

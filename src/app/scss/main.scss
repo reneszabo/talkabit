@@ -1,0 +1,166 @@
+/* 
+    Created on : 25-Sep-2015, 11:19:26 PM
+    Author     : Rene Ramirez <rene.ramirez@fersz.com>
+*/
+$fa-font-path: "../../bower_components/font-awesome/fonts";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+body {
+  padding: 0; 
+  background: rgba(0, 0, 0, 0.2);
+}
+header.header{ 
+  min-height: 57px;
+  margin-bottom: 10px;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*border-bottom: 1px solid #e5e5e5;*/
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 55px;
+}
+/*BUTTONS*/
+.btn-talkabit-border-less{
+  border-color: transparent;
+  background: transparent;
+  &:hover,&:active,&:focus, &:visited{
+    border-color: transparent;
+    outline: none;
+  }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+/*PANEL*/
+.panel{
+  border-radius: none;
+  border-radius: 0;
+}
+.panel-heading{
+  h4{
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+}
+.talkabit-panel-room{
+  .description{
+
+  }
+  .comments{
+    .media-object{
+      max-width: 64px;
+    }
+  }
+}
+.talkabit-panel-record{
+  
+}
+/*IMAGES POPULAR*/
+.talkabit-img-container{
+  .talkabit-img-popular{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    .row{
+      .col-xs-6{
+      }
+    }
+  }
+}
+/*SOCIAL LOGIN*/
+.connect{
+  color: #FFF;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 72px;
+  line-height: 72px;
+  text-decoration: none;
+
+  .connect_icon {
+    vertical-align: middle;
+    float: left;
+    width: 70px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .connect_context {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &.facebook{
+    background: #3b5998;
+    .connect_icon {
+      background: #283d68;
+    }
+  }
+  &.googleplus{
+    background: #dd4b39;
+    .connect_icon {
+      background: #b52f1f;
+    }
+  }
+  &:hover, &:focus, &:visited{
+    color: #FFF;
+    text-decoration: none;
+  }
+
+}
+/* Popular Nav */
+@media (max-width: 768px){
+
+  .navbar-popular{
+    .navbar-form .form-group {
+      display: inline-block;
+      margin-bottom: 0; 
+      vertical-align: middle;
+    }
+    .navbar-form .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+    }
+    .navbar-form {
+      border: none;
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+  }
+}
+
+@import "partials/login.scss";
